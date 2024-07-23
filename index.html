@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food landing page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+   </head>
+
+  <body>
+    <!-- todo header starts here  -->
+    <header>
+      <!-- ? navigation bar in responsive starts here  -->
+      <nav class="navbar responsivenavbar badge text-bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-5" href="#">Food Zone</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-warning d-flex px-3 py-2 gap-2 me-5"
+                  type="submit"
+                >
+                  <img src="user.svg" alt="user-image" /> <b>Login</b>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ? navigation bar in responsive ends here  -->
+
+      <!-- ? navigation bar starts here  -->
+      <nav class="navbar visiblenone mx-5">
+        <div class="nav-container container-fluid">
+          <a class="navbar-brand">Maharashta Sanskruti Foods.</a>
+          <p>
+            <b>Deliver to:</b>
+            <img src="map-marker-alt.svg" alt="map-marker" />
+            <span class="open-sea"
+              >Current Location <b>Gokuldham street Jalgaon</b></span
+            >
+          </p>
+          <form class="d-flex" role="search gap-30px">
+            <img src="Search.svg" alt="search-icon" />
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search Food"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-warning d-flex px-3 py-2 gap-2 me-5"
+              type="submit"
+            >
+              <img src="user.svg" alt="user-image" /> <b>Login</b>
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- ? header content starts here  -->
+      <div
+        class="container-fluid d-flex flex-wrap-reverse justify-content-between heading-main"
+      >
+        <!-- ? left content stars here  -->
+        <div class="left-content ms-5" >
+          <h1 class="margin-top142px mb-3">Let's Eat Quality Food</h1>
+          <p class="mb-4">
+            The food you love, right in front of your door.
+          </p>
+          <form class="form-container container-fluid">
+            <div class="buttons d-flex gap-2 p-4 align-items-start">
+              <button type="button" class="bike-btn rounded-3">
+                <img src="bike-icon.svg" alt="bike-icon" />&nbsp;Delivery
+              </button>
+              <button type="button" class="bag-btn rounded-3">
+                <img src="bag-btn.svg" alt="bag-button" />
+              </button>
+            </div>
+
+            <div class="header-inputs d-flex p-4 align-items-start gap-2">
+              <img
+                src="location-icon-babby-pink.svg"
+                alt="location-icon-babby-pink"
+                class="icon-pink-location"
+              />
+              <input
+                class="input-address rounded-3 align-items-center d-flex gap-2.5 p-3"
+                type="text"
+                value="      address"
+              />
+              <button
+                type="button"
+                class="search-btn rounded-3 d-flex gap-2 justify-content-center align-items-center"
+              >
+                <img src="search-white.png" alt="search-icon-white" />Find
+                Food
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- ? right content stars here  -->
+        <div class="right-image me-5">
+          <img
+            src="thali.png"
+            alt="heading-foods"
+            class="img-fluid my-5"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- todo header ends here  -->
+
+    <!-- todo main starts here  -->
+    <main>
+      <!-- ? 1st main container starts here  -->
+      <div class="card1-group d-flex flex-wrap gap-3 justify-content-center">
+        <div class="card1">
+          <img
+            src="puranPoli.webp"
+            class="card-img-top img-fluid rounded-3"
+            alt="puranPoli"
+          />
+          <div class="card-body">
+            <h5 class="card-title mt-4 mb-3">Puran Poli</h5>
+            <button type="button" class="rounded-3 align-items-start">
+              30 min Delivery
+            </button>
+          </div>
+        </div>
+        <div class="card1">
+          <img
+            src="aamras.avif"
+            class="card-img-top img-fluid rounded-3"
+            alt="Aamras"
+          />
+          <div class="card-body">
+            <h5 class="card-title mt-4 mb-3">Aamras</h5>
+            <button type="button" class="rounded-3 align-items-start">
+              30 min Delivery
+            </button>
+          </div>
+        </div>
+        <div class="card1">
+          <img
+            src="zunkaBhakar.jpg"
+            class="card-img-top img-fluid rounded-3"
+            alt="zunka-Bhakar"
+          />
+          <div class="card-body">
+            <h5 class="card-title mt-4 mb-3">Zunka Bhakar</h5>
+            <button type="button" class="rounded-3 align-items-start">
+              30 min Delivery
+            </button>
+          </div>
+        </div>
+        <div class="card1">
+          <img src="shevBhaji.webp" class="card-img-top img-fluid rounded-3
+          alt="shevBhaji" />
+          <div class="card-body">
+            <h5 class="card-title mt-4 mb-3">Shev Bhaji</h5>
+            <button type="button" class="rounded-3 align-items-start">
+              30 min Delivery
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- ? 1st main container ends here  -->
+
+      <!-- ? 2nd main container starts here  -->
+      <div class="card2-group d-flex align-items-center flex-column">
+        <h1 >Trending</h1>
+        <div
+          class="card2-group-container container flex-wrap d-flex justify-content-evenly text-center"
+        >
+          <div class="card2 d-flex align-items-center my-5">
+            <img
+              src="daily-discounts.svg"
+              class="img-fluid"
+              alt="daily-discounts"
+            />
+            <h2>
+              50% OFF On<br />
+              First Order
+            </h2>
+          </div>
+          <img src="hr-line.svg" alt="hr-line" />
+          <div class="card2 d-flex align-items-center my-5">
+            <img
+              src="live-tracing.svg"
+              class="img-fluid"
+              alt="live-tracing"
+            />
+            <h2>
+              Near To <br />
+              Your Home
+            </h2>
+          </div>
+          <img src="hr-line.svg" alt="hr-line" />
+          <div class="card2 d-flex align-items-center my-5">
+            <img
+              src="quick-delivery.svg"
+              class="img-fluid"
+              alt="quick-delivery"
+            />
+            <h2>
+              30 Minutes<br />
+              Delivery
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- ? 2nd main container ends here  -->
+
+      <!-- ? 3rd main container starts here  -->
+      <div
+        class="card3-group container-fluid d-flex flex-column align-items-center"
+      >
+        <h2>Our Tasty Menu Today</h2>
+        <div
+          class="card3-group-container d-flex flex-wrap text-center justify-content-center gap-4"
+        >
+          <div class="card3">
+            <img src="Misal-Pav.png" alt="Misal-Pav" />
+            <p>Misal Pav</p>
+          </div>
+          <div class="card3">
+            <img src="kichadi.jpg" alt="Khichadi" />
+            <p>Khichadi</p>
+          </div>
+          <div class="card3">
+            <img src="halva.jpg" alt="Halwa" />
+            <p>Halwa</p>
+          </div>
+          <div class="card3">
+            <img src="batti.jpeg" alt="Batti" />
+            <p>Batti</p>
+          </div>
+          <div class="card3">
+            <img src="pavBhaji.jpg" alt="pavBhaji" />
+            <p>Pav Bhaji</p>
+          </div>
+          <div class="card3">
+            <img src="veg-rice.png" alt="veg-rice" />
+            <p>Veg Rice</p>
+          </div>
+        </div>
+      </div>
+      <!-- ? 3rd main container ends here  -->
+
+      <!-- ? 4th main container starts here  -->
+      <div
+        class="card4-group d-flex flex-wrap justify-content-center align-items-center gap-5"
+      >
+        <div class="cards4">
+          <div class="card4">
+            <div class="card-body">
+              <h5 class="card-title">
+                Best deals
+                <span class="yellow-text"
+                  >A Taste of <br />
+                  Maharastra</span
+                >
+              </h5>
+              <p class="card-text4">
+                Enjoy the Maharastrian Thali <br />
+                at just Rs.99 .
+              </p>
+              <a
+                href="#"
+                class="btn-4 d-flex justify-content-center align-items-center"
+                > Order Now
+                <img src="CHEVRON-RIGHT.svg" alt="right-arow"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <img
+          src="veg.avif"
+          class="img-fluid mid-food"
+          alt="main-food"
+        />
+      </div>
+      <!-- ? 4th main container ends here  -->
+
+      <!-- ? 5th main container starts here  -->
+      <div class="card5-group d-flex flex-wrap flex-column align-items-center">
+        <h1 class="mb-5">Popular items</h1>
+        <div class="cards5 d-flex flex-column">
+          <div
+            class="cards5-1st-group d-flex flex-wrap justify-content-center mx-5 gap-3"
+          >
+            <div class="card5">
+              <img src="murukku.png" alt="Chakli" />
+              <h2 class="text-center my-3">Chakli</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="samosa.png" alt="Samosa Kachori" />
+              <h2 class="text-center my-3">Samosa Kachori</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="pohe.jpg" alt="Poha" />
+              <h2 class="text-center my-3">Poha</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="mixture.png" alt="Farsan" />
+              <h2 class="text-center my-3">Farsan</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="sobudana.jpeg" alt="sabudana" />
+              <h2 class="text-center my-3">Sabuda Vada</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+          </div>
+          <div
+            class="cards5-2nd-group d-flex flex-wrap justify-content-center mx-5 gap-3"
+          >
+            <div class="card5">
+              <img src="basundi.png" alt="basundi" />
+              <h2 class="text-center my-3">Basundi</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="bhel-puri.jpg" alt="bhel-puri" />
+              <h2 class="text-center my-3">bhel puri</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="Ragda-Pattice.png" alt="Ragda-Pattice" />
+              <h2 class="text-center my-3">Ragda Pattice</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="Sreekhand.png" alt="Sreekhand" />
+              <h2 class="text-center my-3">Sreekhand</h2>
+              <button type="button" class="text-center btn-5">Order Now</button>
+            </div>
+            <div class="card5">
+              <img src="Kothimbir-Vadi.png" alt="Kothimbir Vadi" />
+              <h2 class="text-center my-3">Kothimbir Vadi</h2>
+              <button type="button" class="btn-5">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ? 5th main container ends here  -->
+    </main>
+    <!-- todo main ends here  -->
+
+    <!-- todo footer starts here  -->
+    <footer>
+      <div class="footer-coloum d-flex flex-column align-items-center">
+        <img src="HR.svg" alt="HR-line" class="hr-first img-fluid" />
+        <div class="footer-two container-fluid d-flex flex-wrap">
+          <div class="footer-left d-flex flex-wrap">
+            <div class="legal">
+              <h2 class="mb-5">Legal</h2>
+              <p>Terms & Conditions</p>
+              <p>Refund & Cancellation</p>
+              <p>Privacy Policy</p>
+              <p>Cookie Policy</p>
+            </div>
+            <div class="Contact">
+              <h2 class="mb-5">Contact</h2>
+              <p>Help & Support</p>
+              <p>Partner with us</p>
+              <p>Ride with us</p>
+            </div>
+            <div class="company">
+              <h2 class="mb-5">Company</h2>
+              <p>About Us</p>
+              <p>Team</p>
+              <p>Careers</p>
+              <p>Blog</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <h2 class="mb-5">Follow us</h2>
+            <div class="social-icons mb-5">
+              <img src="instagram-icon.svg" alt="instagram-icon" />
+              <img src="faceBook-icon.png" alt="faceBook-icon" />
+              <img src="twitter-icon.png" alt="twitter-icon" />
+            </div>
+            <h3 class="mb-5">Receive exclusive offers in your mailbox</h3>
+            <form class="d-flex flex-wrap flex-row gap-3">
+              <img class="mail-icon" src="mail-icon.svg" alt="mail-icon" />
+              <input
+                class="input-email"
+                placeholder="        Enter Your email"
+                type="email"
+                name="email"
+                id="email"
+              />
+              <button class="footer-btn mb-5" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <img src="HR.svg" alt="HR-line" class="img-fluid" />
+        <div class="rights d-flex justify-content-between con mb-5">
+          <p class="p1">
+            All rights Reserved
+            <img src="copy-right-symble.svg" alt="copy-right-symble" />
+          </p>
+          <p class="p2">
+            <img src="Made with  by.png" alt="yellow-heart" />
+            <span>Sai Bhoi</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- todo footer ends here  -->
+
+    <!-- !  bootstrap and font-awesome links in below -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b971252705.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
